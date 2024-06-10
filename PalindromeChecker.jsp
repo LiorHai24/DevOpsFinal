@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Palindrome Checker</title>
+<title>Palindrome Checker Result</title>
 </head>
 <body>
-    <h1>Palindrome Checker</h1>
+    <h1>Palindrome Checker Result</h1>
+    
     <%
         String inputString = request.getParameter("inputString");
         
@@ -22,7 +23,16 @@
                 <%= inputString %> is <%= isPalindrome ? "a" : "not a" %> palindrome.
             </p>
     <%
+        } else {
+    %>
+            <p>
+                The input string is invalid.
+            </p>
+    <%
         }
     %>
+    
+    <!-- Add a back button to return to the index page -->
+    <a href="index.jsp">Back to Home Page</a>
 </body>
 </html>
