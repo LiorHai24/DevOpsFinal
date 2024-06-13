@@ -1,0 +1,230 @@
+{
+  "id": "e706038a-d1d9-4575-a4e8-5bd328f119d8",
+  "version": "2.0",
+  "name": "devops final",
+  "url": "https://devopsfinal.azurewebsites.net",
+  "tests": [{
+    "id": "7bf413a4-2f46-40bb-9e9b-cf3087d20db2",
+    "name": "test",
+    "commands": [{
+      "id": "39031c5d-04f8-4404-940e-7b38a17f4ec5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26e96b3f-b444-4303-8f5c-70139a0d78a7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fee33b97-4dbb-4bfd-b0a8-8ae7abb10e08",
+      "comment": "",
+      "command": "click",
+      "target": "name=inputString",
+      "targets": [
+        ["name=inputString", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='inputString']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "888923c2-89fc-4453-a4cf-53a17fcd980b",
+      "comment": "",
+      "command": "type",
+      "target": "name=inputString",
+      "targets": [
+        ["name=inputString", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='inputString']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "hello"
+    }, {
+      "id": "a7e3a346-ea99-4212-b8ea-49ad1e2849cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Check Palindrome']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b470cafe-37de-4268-8712-4c24c107f18f",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "478090f3-6170-4f0c-a174-0ed8f0ef36d8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'hello is not a palindrome.')]", "xpath:innerText"]
+      ],
+      "value": "hello is not a palindrome."
+    }, {
+      "id": "d6815a1c-fee6-44aa-b2db-5f7d1cf4894d",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Palindrome Checker Result')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0acc269-f643-413b-87d8-9d4455b90b2b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Palindrome Checker Result')]", "xpath:innerText"]
+      ],
+      "value": "Palindrome Checker Result"
+    }, {
+      "id": "64c5f926-5560-4bc2-8598-d86014453e92",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back to Home Page",
+      "targets": [
+        ["linkText=Back to Home Page", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back to Home Page')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back to Home Page')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b643ee9-2887-4800-b74c-e4c6c7c9088c",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Check Palindrome']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0dcf0af-b400-401a-b4a9-83c7e46c083d",
+      "comment": "",
+      "command": "click",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'The input string is invalid.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8edd98dd-30cb-4c7d-bd75-c1a6e9bfbd68",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'The input string is invalid.')]", "xpath:innerText"]
+      ],
+      "value": "The input string is invalid."
+    }, {
+      "id": "a7ee23cc-f9e9-4f44-9871-891be2bfa4f2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back to Home Page",
+      "targets": [
+        ["linkText=Back to Home Page", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back to Home Page')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back to Home Page')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a747f895-f467-4e3f-b1bf-448c0045ccb3",
+      "comment": "",
+      "command": "click",
+      "target": "name=inputString",
+      "targets": [
+        ["name=inputString", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='inputString']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc8912cd-3af1-4a8d-a02a-b1679b896e74",
+      "comment": "",
+      "command": "type",
+      "target": "name=inputString",
+      "targets": [
+        ["name=inputString", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='inputString']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "maam"
+    }, {
+      "id": "cd810380-0c17-44d3-88e3-84c7c7df7220",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Check Palindrome']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2efdf243-9f5c-4de1-8b09-f295ca458fca",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dedcce9-136c-478d-8b06-7dc393ba1843",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'maam is a palindrome.')]", "xpath:innerText"]
+      ],
+      "value": "maam is a palindrome."
+    }]
+  }],
+  "suites": [{
+    "id": "cd9e2f78-208e-4052-8ee3-a58590b6dce6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://devopsfinal.azurewebsites.net/"],
+  "plugins": []
+}
