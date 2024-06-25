@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Palindrome Checker</h1>
+    
     <form method="post" action="PalindromeChecker.jsp">
         Enter a string: <input type="text" name="inputString" />
         <input type="submit" value="Check Palindrome" />
