@@ -6,8 +6,9 @@
 <meta charset="UTF-8">
 <title>Palindrome Checker</title>
 </head>
-<body>
+<body>g
     <h1>Palindrome Checker</h1>
+
     
     <form method="post" action="PalindromeChecker.jsp">
         Enter a string: <input type="text" name="inputString" />
